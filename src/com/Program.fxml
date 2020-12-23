@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="468.0" prefWidth="347.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ProgramController">
+   <children>
+      <GridPane layoutX="14.0" layoutY="271.0" prefHeight="181.0" prefWidth="318.0" style="-fx-background-color: lightblue; -fx-border-style: solid;">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="290.20001220703125" minWidth="10.0" prefWidth="36.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="293.40003204345703" minWidth="10.0" prefWidth="282.4" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER" prefHeight="18.0" prefWidth="36.0" text="No" />
+            <Label alignment="CENTER" prefHeight="18.0" prefWidth="36.0" text="1" GridPane.rowIndex="1" />
+            <Label alignment="CENTER" prefHeight="18.0" prefWidth="36.0" text="2" GridPane.rowIndex="2" />
+            <Label alignment="CENTER" prefHeight="18.0" prefWidth="36.0" text="3" GridPane.rowIndex="3" />
+            <Label alignment="CENTER" prefHeight="18.0" prefWidth="36.0" text="4" GridPane.rowIndex="4" />
+            <Label alignment="CENTER" prefHeight="18.0" prefWidth="289.0" text="To buy" GridPane.columnIndex="1" />
+            <Label fx:id="product1" alignment="CENTER" prefHeight="18.0" prefWidth="289.0" text="Product 1" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="product2" alignment="CENTER" prefHeight="18.0" prefWidth="289.0" text="Product 2" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="product3" alignment="CENTER" prefHeight="18.0" prefWidth="289.0" text="Product 3" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="product4" alignment="CENTER" prefHeight="18.0" prefWidth="289.0" text="Product 4" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+      <Button onAction="#deleteAll" layoutX="14.0" layoutY="234.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="318.0" style="-fx-background-color: pink;" text="Delete all items in Database" />
+      <Button onAction="#fetch" layoutX="14.0" layoutY="200.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="318.0" style="-fx-background-color: lightblue;" text="Fetch Database" />
+      <TextField fx:id="productNameField" layoutX="14.0" layoutY="94.0" prefHeight="26.0" prefWidth="318.0" />
+      <Label layoutX="14.0" layoutY="69.0" text="Product Name" />
+      <Button onAction="#addItem" layoutX="14.0" layoutY="128.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="318.0" style="-fx-background-color: lightgreen;" text="Add item" />
+      <Label layoutX="14.0" layoutY="171.0" text="Status:" textFill="#008c1a">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="status" layoutX="59.0" layoutY="171.0" prefHeight="18.0" prefWidth="275.0" text="none" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="50.0" prefWidth="318.0" text="Product list" textFill="#13da37">
+         <font>
+            <Font name="System Italic" size="34.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
